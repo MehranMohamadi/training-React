@@ -27,12 +27,13 @@
 //);
 
 //export default App;
-import HookCounter from "./components/HookCounter";
+
+import HookAray from "./components/HookAray";
 
 function App() {
   return (
     <div className="App">
-      <HookCounter />
+      <HookAray />
     </div>
   );
 }

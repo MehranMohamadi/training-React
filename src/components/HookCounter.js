@@ -1,3 +1,4 @@
+/*
 import { useState } from "react";
 
 const HookCounter = () => {
@@ -28,3 +29,22 @@ const HookCounter = () => {
 };
 
 export default HookCounter;
+*/
+
+import { useState } from "react";
+
+const HookCouner = () => {
+  const [count, set] = useState(0);
+  const clickHandler = () => {
+    set(count + 13);
+  };
+
+  return (
+    <div>
+      <h3>{count}</h3>
+      <button onClick={clickHandler}>click on me</button>
+    </div>
+  );
+};
+
+export default HookCouner;
